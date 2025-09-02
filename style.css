@@ -13,6 +13,9 @@ body {
   background: #f4f4f4;
   color: #333;
   transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -33,16 +36,20 @@ header p {
   color: #ddd;
 }
 
+main {
+  flex: 1;
+}
+
 /* Gallery Grid */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   padding: 1rem;
-    max-width: 1200px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
@@ -120,7 +127,7 @@ header p {
   max-height: 80%;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255,255,255,0.5);
-
+  
   transform: scale(0.7);   /* mindre */
   opacity: 0;              /* gömd */
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -148,10 +155,7 @@ footer {
   background: #333;
   color: white;
   font-size: 0.9rem;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  
 }
 
 /* Responsiv design */

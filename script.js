@@ -21,7 +21,7 @@ function createImageCard(i) {
 
   // Skapa bild-element
   const img = document.createElement("img");
-  img.src = `https://picsum.photos/500/300?random=${getRandomNumber()}`;
+  img.src = `https://picsum.photos/1000/600?random=${getRandomNumber()}`;
   //img.src = `https://picsum.photos/id/${getRandomNumber()}/500/300`;
 
   imageCount++;
